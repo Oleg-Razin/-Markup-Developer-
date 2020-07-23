@@ -25,21 +25,14 @@ body{
 .header{
   position: relative;
 
-  background-color: $light_gray_header;
+  background: #B1D7C7;
+  background: -moz-linear-gradient(left, #B1D7C7 0%, #B1D7C7 34%, #FDFDFD 100%);
+  background: -webkit-linear-gradient(left, #B1D7C7 0%, #B1D7C7 34%, #FDFDFD 100%);
+  background: linear-gradient(to right, #B1D7C7 0%, #B1D7C7 34%, #FDFDFD 100%);
 
   -webkit-box-shadow: 0px 6px 11px 0px rgba(172,172,172,0.3);
   box-shadow: 0px 6px 11px 0px rgba(172,172,172,0.3);
   overflow: hidden;
-
-  &:before{
-    @include pseudo-apsol();
-    z-index: 0;
-    width: 60vw;
-    border-top: 20vh solid $light_green_header;
-    border-right: 100px solid transparent;
-    overflow: hidden;
-  }
-  
 
 }
 
@@ -155,6 +148,8 @@ body{
   }
   &__datepicker-input{
     padding: 0 5px;
+
+    background-color: transparent;
 
     border: none;
     outline: none;

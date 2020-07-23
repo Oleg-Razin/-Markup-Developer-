@@ -1,0 +1,355 @@
+@import "common/default";
+@import "common/mixins";
+
+
+$main_font: 'Open Sans', sans-serif;
+
+
+$light_blue: #6face3;
+$font_color_main: #464148;
+$white: #fff;
+$light_gray: #fafafa;
+$light_gray_header: #fdfdfd;
+$light_green_header: #a0d8c8;
+
+body{
+  font-family: $main_font;
+  background-color: $light_gray;
+}
+
+.container{
+  max-width: 1140px;
+  margin: auto;
+}
+
+.header{
+  position: relative;
+
+  background-color: $light_gray_header;
+
+  -webkit-box-shadow: 0px 6px 11px 0px rgba(172,172,172,0.3);
+  box-shadow: 0px 6px 11px 0px rgba(172,172,172,0.3);
+  overflow: hidden;
+
+  &:before{
+    @include pseudo-apsol();
+    z-index: 0;
+    width: 60vw;
+    border-top: 20vh solid $light_green_header;
+    border-right: 100px solid transparent;
+    overflow: hidden;
+  }
+  
+
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+
+  padding: 45px 25px;
+
+
+  .logo{
+    padding: 0 25px;
+  }
+
+  &__image{
+    width: 100%;
+
+  }
+
+  &__item{
+    @include max-screen(425px){
+      display: flex;
+      flex-direction: column;
+
+    }
+  }
+
+  &__title{
+    display: inline;
+
+    margin-right: 15px;
+
+    color: $font_color_main;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 35px;
+  }
+  &__starting-day{
+    padding: 5px 10px;
+
+    color: $light_blue;
+    font-size: 14px;
+    line-height: 35px;
+
+    border: solid 1px $light_blue;
+    border-radius: 2px;
+    @include max-screen(425px){
+      display: inline-block;
+
+    }
+  }
+  &__info{
+    margin: 25px 0;
+  }
+  &__info-text{
+    margin-right: 20px;
+
+    color: $font_color_main;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &__info-text_bold{
+    margin-right: 3px;
+
+    font-weight: 700;
+  }
+  &__datepicker{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+
+    @include max-screen(425px){
+      flex-direction: column;
+      align-items: start;
+
+    }
+
+    i{
+      margin-left: 5px;
+
+      color: $font_color_main;
+      font-size: 14px;
+      &:hover{
+        color: red;
+      }
+    }
+  }
+  &__datepicker-text{
+    color: $font_color_main;
+    font-size: 14px;
+    font-weight: 500;
+    @include max-screen(425px){
+      padding-left: 5px;
+      margin-bottom: 10px;
+
+    }
+  }
+  &__datepicker-item{
+    position: relative;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+
+    border-bottom: solid 1px gray;
+
+    @include max-screen(425px){
+      margin-left: 0;
+      margin-bottom: 10px;
+
+    }
+
+  }
+  &__datepicker-input{
+    padding: 0 5px;
+
+    border: none;
+    outline: none;
+
+    line-height: 18px;
+  }
+
+  &__datepicker-cale{
+    position: absolute;
+    top: 0;
+    right: 30px;
+
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    color: $font_color_main;
+    font-size: 14px;
+    &:after{
+      @include pseudo-apsol();
+      content: "\f073";
+
+    }
+
+  }
+}
+
+.main{
+  padding: 10px 0 50px;
+}
+
+.catalog{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include max-screen(768px){
+    padding: 0 10px;
+  }
+
+  @include max-screen(425px){
+    padding: 0 10px;
+    justify-content: center;
+  }
+
+}
+.settings{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding: 20px 0;
+  @include max-screen(768px){
+    padding: 20px 10px;
+  }
+
+  &__btn{
+    margin-left: 25px;
+
+    background-color: transparent;
+    border: none;
+
+    overflow: hidden;
+    outline: none;
+    i{
+      font-size: 26px;
+      color: #cbcac9;
+
+      &:hover, &:active{
+        color: $light_green_header;
+      }
+    }
+
+    &:active{
+      color: $light_green_header;
+    }
+
+  }
+
+
+}
+.card{
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 360px;
+  height: 360px;
+
+  margin-bottom: 30px;
+
+  background: #6FACE3;
+  background: -moz-linear-gradient(-45deg, #6FACE3 0%, #000000 100%);
+  background: -webkit-linear-gradient(-45deg, #6FACE3 0%, #000000 100%);
+  background: linear-gradient(135deg, #6FACE3 0%, #000000 100%);
+
+  @include max-screen(320px){
+    width: 300px;
+    height: 300px;
+
+  }
+
+  @include min-screen(1024px){
+    width: 320px;
+    height: 320px;
+
+  }
+  @include min-screen(1440px){
+    width: 360px;
+    height: 360px;
+
+  }
+
+  &__image-link{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100%;
+    transition: 0.2s;
+    &:hover .card__image{
+      animation: translating 10s linear 0s infinite;
+      @keyframes translating {
+        0%  { transform: scale(3);
+          opacity: 0.3;}
+        25% {  transform: scale(2.7);}
+        50%{ transform: scale(2.5);
+          opacity: 0.7;}
+        75%  { transform: scale(2.7);}
+        100% {  transform: scale(3);
+          opacity: 0.3}
+      }
+    }
+  }
+
+  &__image{
+    transform: scale(3);
+    opacity: 0.3;
+  }
+
+  &__description{
+    position: relative;
+    z-index: 1;
+
+    width: inherit;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 20px;
+  }
+  &__status{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+  }
+
+  &__activity{
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+
+  }
+
+  &__text{
+    padding-right: 5px;
+    color: $white;
+    font-size: 12px;
+    font-weight: 400;
+
+  }
+
+  &__text_bold{
+    font-weight: 700;
+  }
+  &__like-btn, &__commented{
+    font-size: 18px;
+    cursor: pointer;
+  }
+  &__liked{
+    display: block;
+    min-width: 40px;
+    margin-right: 10px;
+  }
+}
+
+
+.ui-widget-header{
+  background-color: $white;
+  border: none;
+}

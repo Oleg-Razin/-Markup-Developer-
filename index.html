@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Markap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <div class="nav__item">
+                <h1 class="nav__title">monblanproject</h1>
+                <span class="nav__starting-day">Start on 17-02-2019</span>
+                <div class="nav__info">
+                    <span class="nav__info-text"><span class="nav__info-text_bold">254</span>posts</span>
+                    <span class="nav__info-text"><span class="nav__info-text_bold">2125</span>followers</span>
+                    <span class="nav__info-text"><span class="nav__info-text_bold">2121</span>following</span>
+                </div>
+                <div class="nav__datepicker">
+                    <span class="nav__datepicker-text">Date</span>
+                    <div class="nav__datepicker-item">
+                        <input class="nav__datepicker-input" type="text" placeholder="From" id="from">
+                        <label class="nav__datepicker-cale" for="from"></label>
+                        <i class="fas fa-times input-reset-from"></i>
+
+                    </div>
+                    <div class="nav__datepicker-item">
+                        <input class="nav__datepicker-input" type="text" placeholder="to" id="to">
+                        <label class="nav__datepicker-cale" for="to"></label>
+                        <i class="fas fa-times input-reset-to"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<section class="main">
+    <div class="container">
+        <div class="settings">
+            <button class="settings__btn grid-btn">
+                <i class="fas fa-th"></i>
+            </button>
+            <button class="settings__btn list-btn">
+                <i class="fas fa-list"></i>
+            </button>
+        </div>
+        <ul class="catalog">
+            <li class="card">
+                <a href="#" class="card__image-link">
+                    <img class="card__image" src="images/article_1.jpg" alt="article_1">
+                </a>
+                <div class="card__description">
+                    <div class="card__status today">
+                        <span class="card__text">today</span>
+                        <div class="card__activity">
+                            <i class="fas fa-heart card__text card__text_bold card__like-btn"></i>
+                            <span class="card__text card__text_bold card__liked">124</span>
+                            <i class="fas fa-comment-alt card__text card__text_bold card__commented"></i>
+                            <span class="card__text card__text_bold">21</span>
+                        </div>
+                    </div>
+                    <div class="card__status previous-day">
+                        <span class="card__text">09-06-2019</span>
+                        <div class="card__activity">
+                            <i class="fas fa-heart card__text card__text_bold card__like-btn"></i>
+                            <span class="card__text card__text_bold card__liked">1280</span>
+                            <i class="fas fa-comment-alt card__text card__text_bold card__commented"></i>
+                            <span class="card__text card__text_bold">21</span>
+                        </div>
+                    </div>
+                    <h3 class="card__text">Image upload: 12-03-2019</h3>
+                </div>
+            </li>
+            <li class="card">
+                <a href="#" class="card__image-link">
+                    <img class="card__image" src="images/article_2.jpg" alt="article_2">
+                </a>
+                <div class="card__description">
+                    <div class="card__status today">
+                        <span class="card__text">today</span>
+                        <div class="card__activity">
+                            <i class="fas fa-heart card__text card__text_bold card__like-btn"></i>
+                            <span class="card__text card__text_bold card__liked">124</span>
+                            <i class="fas fa-comment-alt card__text card__text_bold card__commented"></i>
+                            <span class="card__text card__text_bold">21</span>
+                        </div>
+                    </div>
+                    <div class="card__status previous-day">
+                        <span class="card__text">09-06-2019</span>
+                        <div class="card__activity">
+                            <i class="fas fa-heart card__text card__text_bold card__like-btn"></i>
+                            <span class="card__text card__text_bold card__liked">1280</span>
+                            <i class="fas fa-comment-alt card__text card__text_bold card__commented"></i>
+                            <span class="card__text card__text_bold">21</span>
+                        </div>
+                    </div>
+                    <h3 class="card__text">Image upload: 12-03-2019</h3>
+                </div>
+            </li>
+            <li class="card">
+                <a href="#" class="card__image-link">
+                    <img class="card__image" src="images/article_3.jpg" alt="article_3">
+                </a>
+                <div class="card__description">
+                    <div class="card__status today">
+                        <span class="card__text">today</span>
+                        <div class="card__activity">
+                            <i class="fas fa-heart card__text card__text_bold card__like-btn"></i>
+                            <span class="card__text card__text_bold card__liked">124</span>
+                            <i class="fas fa-comment-alt card__text card__text_bold card__commented"></i>
+                            <span class="card__text card__text_bold">21</span>
+                        </div>
+                    </div>
+                    <div class="card__status previous-day">
+                        <span class="card__text">09-06-2019</span>
+                        <div class="card__activity">
+                            <i class="fas fa-heart card__text card__text_bold card__like-btn"></i>
+                            <span class="card__text card__text_bold card__liked">1280</span>
+                            <i class="fas fa-comment-alt card__text card__text_bold card__commented"></i>
+                            <span class="card__text card__text_bold">21</span>
+                        </div>
+                    </div>
+                    <h3 class="card__text">Image upload: 12-03-2019</h3>
+                </div>
+            </li>
+            <li class="card">
+                <a href="#" class="card__image-link">
+                    <img class="card__image" src="images/article_4.jpg" alt="article_4">
+                </a>
+                <div class="card__description">
+                    <div class="card__status today">
+                        <span class="card__text">today</span>
+                        <div class="card__activity">
+                            <i class="fas fa-heart card__text card__text_bold card__like-btn"></i>
+                            <span class="card__text card__text_bold card__liked">124</span>
+                            <i class="fas fa-comment-alt card__text card__text_bold card__commented"></i>
+                            <span class="card__text card__text_bold">21</span>
+                        </div>
+                    </div>
+                    <div class="card__status previous-day">
+                        <span class="card__text">09-06-2019</span>
+                        <div class="card__activity">
+                            <i class="fas fa-heart card__text card__text_bold card__like-btn"></i>
+                            <span class="card__text card__text_bold card__liked">1280</span>
+                            <i class="fas fa-comment-alt card__text card__text_bold card__commented"></i>
+                            <span class="card__text card__text_bold">21</span>
+                        </div>
+                    </div>
+                    <h3 class="card__text">Image upload: 12-03-2019</h3>
+                </div>
+            </li>
+            <li class="card">
+                <a href="#" class="card__image-link">
+                    <img class="card__image" src="images/article_5.jpg" alt="article_5">
+                </a>
+                <div class="card__description">
+                    <div class="card__status today">
+                        <span class="card__text">today</span>
+                        <div class="card__activity">
+                            <i class="fas fa-heart card__text card__text_bold card__like-btn"></i>
+                            <span class="card__text card__text_bold card__liked">124</span>
+                            <i class="fas fa-comment-alt card__text card__text_bold card__commented"></i>
+                            <span class="card__text card__text_bold">21</span>
+                        </div>
+                    </div>
+                    <div class="card__status previous-day">
+                        <span class="card__text">09-06-2019</span>
+                        <div class="card__activity">
+                            <i class="fas fa-heart card__text card__text_bold card__like-btn"></i>
+                            <span class="card__text card__text_bold card__liked">1280</span>
+                            <i class="fas fa-comment-alt card__text card__text_bold card__commented"></i>
+                            <span class="card__text card__text_bold">21</span>
+                        </div>
+                    </div>
+                    <h3 class="card__text">Image upload: 12-03-2019</h3>
+                </div>
+            </li>
+            <li class="card">
+                <a href="#" class="card__image-link">
+                    <img class="card__image" src="images/article_6.jpg" alt="article_7">
+                </a>
+                <div class="card__description">
+                    <div class="card__status today">
+                        <span class="card__text">today</span>
+                        <div class="card__activity">
+                            <i class="fas fa-heart card__text card__text_bold card__like-btn"></i>
+                            <span class="card__text card__text_bold card__liked">124</span>
+                            <i class="fas fa-comment-alt card__text card__text_bold card__commented"></i>
+                            <span class="card__text card__text_bold">21</span>
+                        </div>
+                    </div>
+                    <div class="card__status previous-day">
+                        <span class="card__text">09-06-2019</span>
+                        <div class="card__activity">
+                            <i class="fas fa-heart card__text card__text_bold card__like-btn"></i>
+                            <span class="card__text card__text_bold card__liked">1280</span>
+                            <i class="fas fa-comment-alt card__text card__text_bold card__commented"></i>
+                            <span class="card__text card__text_bold">21</span>
+                        </div>
+                    </div>
+                    <h3 class="card__text">Image upload: 12-03-2019</h3>
+                </div>
+            </li>
+            <li class="card">
+
+                <a href="#" class="card__image-link">
+                    <img class="card__image" src="images/article_7.jpg" alt="article_7">
+                </a>
+                <div class="card__description">
+                    <div class="card__status today">
+                        <span class="card__text">today</span>
+                        <div class="card__activity">
+                            <i class="fas fa-heart card__text card__text_bold card__like-btn"></i>
+                            <span class="card__text card__text_bold card__liked">124</span>
+                            <i class="fas fa-comment-alt card__text card__text_bold card__commented"></i>
+                            <span class="card__text card__text_bold">21</span>
+                        </div>
+                    </div>
+                    <div class="card__status previous-day">
+                        <span class="card__text">09-06-2019</span>
+                        <div class="card__activity">
+                            <i class="fas fa-heart card__text card__text_bold card__like-btn"></i>
+                            <span class="card__text card__text_bold card__liked">1280</span>
+                            <i class="fas fa-comment-alt card__text card__text_bold card__commented"></i>
+                            <span class="card__text card__text_bold">21</span>
+                        </div>
+                    </div>
+                    <h3 class="card__text">Image upload: 12-03-2019</h3>
+                </div>
+            </li>
+            <li class="card">
+                <a href="#" class="card__image-link">
+                    <img class="card__image" src="images/article_8.jpg" alt="article_8">
+                </a>
+                <div class="card__description">
+                    <div class="card__status today">
+                        <span class="card__text">today</span>
+                        <div class="card__activity">
+                            <i class="fas fa-heart card__text card__text_bold card__like-btn"></i>
+                            <span class="card__text card__text_bold card__liked">124</span>
+                            <i class="fas fa-comment-alt card__text card__text_bold card__commented"></i>
+                            <span class="card__text card__text_bold">21</span>
+                        </div>
+                    </div>
+                    <div class="card__status previous-day">
+                        <span class="card__text">09-06-2019</span>
+                        <div class="card__activity">
+                            <i class="fas fa-heart card__text card__text_bold card__like-btn"></i>
+                            <span class="card__text card__text_bold card__liked">1280</span>
+                            <i class="fas fa-comment-alt card__text card__text_bold card__commented"></i>
+                            <span class="card__text card__text_bold">21</span>
+                        </div>
+                    </div>
+                    <h3 class="card__text">Image upload: 12-03-2019</h3>
+                </div>
+            </li>
+            <li class="card">
+                <a href="#" class="card__image-link">
+                    <img class="card__image" src="images/article_9.jpg" alt="article_9">
+                </a>
+                <div class="card__description">
+                    <div class="card__status today">
+                        <span class="card__text">today</span>
+                        <div class="card__activity">
+                            <i class="fas fa-heart card__text card__text_bold card__like-btn"></i>
+                            <span class="card__text card__text_bold card__liked">124</span>
+                            <i class="fas fa-comment-alt card__text card__text_bold card__commented"></i>
+                            <span class="card__text card__text_bold">21</span>
+                        </div>
+                    </div>
+                    <div class="card__status previous-day">
+                        <span class="card__text">09-06-2019</span>
+                        <div class="card__activity">
+                            <i class="fas fa-heart card__text card__text_bold card__like-btn"></i>
+                            <span class="card__text card__text_bold card__liked">1280</span>
+                            <i class="fas fa-comment-alt card__text card__text_bold card__commented"></i>
+                            <span class="card__text card__text_bold">21</span>
+                        </div>
+                    </div>
+                    <h3 class="card__text">Image upload: 12-03-2019</h3>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+</section>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://kit.fontawesome.com/5b3c987a85.js" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

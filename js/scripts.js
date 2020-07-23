@@ -43,6 +43,20 @@ jQuery(document).ready(function() {
 
     });
 
+    $(".list-btn").click(function () {
+        $(this).addClass("active");
+        $(".catalog").addClass("catalog__list-style");
+        $(".card").addClass("card__list-style");
+        $(".grid-btn").removeClass("active")
+
+    })
+    $(".grid-btn").click(function () {
+        $(this).addClass("active");
+        $(".catalog").removeClass("catalog__list-style");
+        $(".card").removeClass("card__list-style");
+        $(".list-btn").removeClass("active")
+    })
+
 });
 
 
